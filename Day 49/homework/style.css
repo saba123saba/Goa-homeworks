@@ -1,0 +1,211 @@
+/*sign up Box*/
+
+body{
+    height: 800px;
+   
+}
+
+body{
+    background-image: url(forest2.jpg);    
+    margin-top: -22px;
+}
+
+
+
+
+.signup-box{
+    width: 360px;
+    height: 640px;
+    border-radius: 3px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    transform: translateY(30px);
+    box-shadow: 5px 5px 5px rgb(16, 17, 16)
+}
+
+.text{
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.form1{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+form input{
+    width: 300px;
+    padding: 3%;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.button1{
+    width: 320px;
+    height: 35px;
+    transform: translateY(-20px);
+    border: none;
+    background-color: rgb(52, 147, 147);
+    color: white;
+    font-size: 15px;
+}
+
+
+.swori{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 17px;
+}
+
+.Chekbox{
+    margin-right: 200px;
+}
+
+
+.forgot{
+    margin-left: 100px;
+    transform: translateY(-10px);
+}
+
+.a1 {
+    margin-left: 190px;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text4 {
+    margin-right: 200px;
+    transform: translateY(-38px);
+    font-size: 17px;
+}
+
+
+
+/*login-box*/
+
+.Login-box{
+    width: 360px;
+    height: 400px;
+    background-color: black;
+    transform: translateY(100px);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgb(16, 17, 16)
+}
+
+.satauri{
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.charchoebi{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+.labeli {
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.paragrafi{
+    margin-top: 150px;
+    margin-left: 625px;
+}
+
+.button2{
+    width: 320px;
+    height: 35px;
+    margin-top: -40px;
+    border: none;
+    background-color: rgb(52, 147, 147);
+    color: white;
+    font-size: 15px;
+}
+
+.text7{
+    margin-right: 200px;
+    transform: translateY(-38px);
+    font-size: 17px;
+}
+
+.a7{
+    padding-left: 186px;
+       
+}
+
+/*forgot password-box*/
+
+.password-box{
+    width: 360px;
+    height: 600px;
+    background-color: black;
+    transform: translateY(30px);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgb(16, 17, 16)
+}
+
+.satauri3{
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.charchoebi4{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+.labeli6{
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.paragrafi3{
+    margin-top: 80px;
+    margin-left: 625px;
+
+}
+
+.button4{
+    width: 320px;
+    height: 35px;
+    margin-top: -10px;
+    border: none;
+    background-color: rgb(52, 147, 147);
+    color: white;
+    font-size: 15px;
+}
+
+.text6{
+    margin-right: 200px;
+    transform: translateY(-35px);
+    font-size: 17px;
+}
+
+
+.a3{
+    padding-left: 186px;
+    
+      
+}

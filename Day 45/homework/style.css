@@ -1,0 +1,17 @@
+.table-box{
+    margin-top: 200px;
+    color: white;
+
+
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th, td {
+    padding: 12px;
+    text-align: left;
+}
+
