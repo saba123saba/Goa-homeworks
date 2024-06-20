@@ -1,0 +1,24 @@
+.submit1 { 
+    width: 320px;
+    height: 35px;
+    margin: 200px;
+    transform: translateX(400px);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(52, 147, 147);
+    color: white;
+    font-size: 15px;
+}
+
+.submit1:hover {
+    color: grey;
+}
+
+.submit1:active {
+    background-color: aqua;
+}
+
+.submit1:visited { 
+    color: black;
+}
+
