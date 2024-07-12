@@ -1,0 +1,478 @@
+body{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #a1a4ac;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/12-120711_most-downloaded-simple-wallpapers-.jpg);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+
+    height: 2px;
+    width: 100%;
+    background: gray;
+}
+/*********index.html(header)*********/
+.header{
+    padding: 30px 0;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10%;
+    border-radius: 20px;
+    transform: translateY(-37px);
+}
+
+.s_travel{
+    color: gray;
+    transform: translateY(-80px) translateX(60px);
+
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+    display: flex;
+    justify-content:left;
+    align-items: left;
+}
+
+.span1{
+    color: #d7cfcf;
+    display: inline;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 19px;
+    transform: rotate(360deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateY(360deg) scale(0.5s); 
+    }
+    50%{
+        transform: rotateX(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.logo:hover{
+    width: 10%;
+    border-style:dotted;
+    border-radius: 30px;
+    
+}
+
+@keyframes slideInleft {
+    from {
+        transform: translateX(180px);
+    }
+
+    to {
+        transform: translateX(420px);
+    }
+}
+
+.heading-1{
+    font-size:larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    transform: translateX(200px);
+
+    animation-name: slideInleft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_list{
+    list-style: none;
+    display: flex;
+}
+
+.menu_list-item{
+    margin: 0 40px;
+    
+}
+
+.menu_list-link{
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    
+}
+
+.menu_list-link::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    height: 2px;
+    width: 0%;
+    background: #14b45c;
+
+    transition: all .6s;
+}
+
+.menu_list-link:hover::after{
+    width: 100%;
+}
+
+.menu-dropdown{
+    list-style: none;
+
+    padding: 20px 0px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .1;
+}
+
+.menu_list-item:hover .menu-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_list-item:hover .fa-caret-down{
+    transform: rotate(180deg);
+}
+
+.menu-dropdown_item{
+    margin: 10px 0;
+}
+
+.menu-dropdown_link{
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #072674;
+}
+
+.menu-dropdown_link:hover{
+    color: gray;
+}
+
+.menu-dropdown_link::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    height: 2px;
+    width: 0%;
+    background: #14b45c;
+
+    transition: all .6s;
+}
+
+.menu-dropdown_link:hover::after{
+    width: 100%;
+}
+
+.menu_list-link:hover{
+    color: gray;
+    
+}
+
+.header_button-link{
+    padding: 10px 30px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background-color: #14b45c;
+    border: 1px solid #14b45c;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   
+    transition: all .5s;
+}
+
+.header_button-link:hover{
+    color: #14b45c;
+    background-color: transparent;
+}
+
+
+/*********index.html(main)*********/
+.video-control{
+    /* background-image: url(imgs/pexels-jplenio-1103970.jpg); */
+    border-radius: 5%;
+    transform: translateX(900px) translateY(0px);
+    box-shadow: 10px 10px 10px rgb(16, 17, 16)
+}
+
+.main_text{
+    transform: translateY(-300px);
+    padding: 0 190px;
+}
+
+@keyframes paragrafi {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.paragrafi{
+    position: relative;
+
+    font-size: 50px;
+
+    animation-name: paragrafi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi:hover::after{
+    width: 36%;
+}
+
+@keyframes paragrafi2 {
+    from {
+        transform: translateX(-150px);
+    }
+
+    to {
+        transform: translateX(-20);
+    }
+}
+
+.paragrafi2{
+    position: relative;
+
+    font-size: 50px;
+
+    transform: translateX(90px);
+
+    animation-name: paragrafi2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi2::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi2:hover::after{
+    width: 20%;
+}
+
+@keyframes paragrafi3 {
+    from {
+        transform: translateX(-110px);
+    }
+
+    to {
+        transform: translateX(-30);
+    }
+}
+
+.paragrafi3{
+    position: relative;
+
+    transform: translateX(140px);
+
+    animation-name: paragrafi3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi3::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi3:hover::after{
+    width: 12%;
+}
+
+@keyframes paragrafi4 {
+    from {
+        transform: translateX(-140px);
+    }
+
+    to {
+        transform: translateX(-40);
+    }
+}
+
+.paragrafi4{
+    position: relative;
+
+    transform: translateX(20px) translateY(20px);
+
+    font-size:large;
+    font-style:oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    animation-name: paragrafi4;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi4::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi4:hover::after{
+    width: 34%;
+}
+
+@keyframes main_button {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-40);
+    }
+}
+
+.main_button{
+    position: relative;
+
+    transform: translateY(-240px);
+    padding: 0 290px;
+
+    animation-name: main_button;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.main_button::after{
+    content: '';
+
+    position: absolute;
+    left: 140px;
+    bottom: -40px;
+
+    height: 2px;
+    width: 35%;
+    background: gray;
+}
+
+.button_P{
+    transform: translateY(-160px);
+    padding: 0 270px;
+
+    animation-name: main_button;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
