@@ -1,0 +1,309 @@
+body{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #a1a4ac;
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/12-120711_most-downloaded-simple-wallpapers-.jpg);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***********Header_style***************************/
+
+.header_container{
+    padding: 10px 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div_container{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(185, 219, 182,);
+    border: 1px solid white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    transform: translateX(-80px);
+    display: flex;
+    justify-content: center;
+}
+
+#header_icons{
+    transform: translateX(-25px) translateY(10px);
+}
+
+.href_parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.href_link{
+    list-style-type: none;
+    list-style-position: inside;
+    text-decoration: none;
+}
+
+.href_item a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_button{
+    transform: translateX(100px);
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    border-color: hsl(0, 0%, 95%);
+    background-color: purple;
+
+    transition: all .6s;
+}
+
+.header_button:hover{
+    background-color: transparent;
+}
+
+#headar_icon-setting{
+    transform: translateX(100px);
+}
+
+/*********index.html(main)*********/
+.main_text{
+    transform: translateY(-300px);
+    padding: 100px 190px;
+}
+
+@keyframes paragrafi {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.paragrafi{
+    position: relative;
+
+    font-size: 50px;
+
+    animation-name: paragrafi;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi:hover::after{
+    width: 36%;
+}
+
+@keyframes paragrafi2 {
+    from {
+        transform: translateX(-150px);
+    }
+
+    to {
+        transform: translateX(-20);
+    }
+}
+
+.paragrafi2{
+    position: relative;
+
+    font-size: 50px;
+
+    transform: translateX(90px);
+
+    animation-name: paragrafi2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi2::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi2:hover::after{
+    width: 20%;
+}
+
+@keyframes paragrafi3 {
+    from {
+        transform: translateX(-110px);
+    }
+
+    to {
+        transform: translateX(-30);
+    }
+}
+
+.paragrafi3{
+    position: relative;
+
+    transform: translateX(140px);
+
+    animation-name: paragrafi3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi3::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi3:hover::after{
+    width: 12%;
+}
+
+@keyframes paragrafi4 {
+    from {
+        transform: translateX(-140px);
+    }
+
+    to {
+        transform: translateX(-40);
+    }
+}
+
+.paragrafi4{
+    position: relative;
+
+    transform: translateX(20px) translateY(20px);
+
+    font-size:large;
+    font-style:oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    animation-name: paragrafi4;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.paragrafi4::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    height: 2px;
+    width: 0%;
+    background: gray;
+
+    transition: all .6s;
+}
+
+.paragrafi4:hover::after{
+    width: 34%;
+}
+
+@keyframes main_button {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-40);
+    }
+}
+
+.main_button{
+    position: relative;
+
+    transform: translateY(-240px);
+    padding: 0 290px;
+
+    animation-name: main_button;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.main_button::after{
+    content: '';
+
+    position: absolute;
+    left: 140px;
+    bottom: -40px;
+
+    height: 2px;
+    width: 35%;
+    background: gray;
+}
+
+.button_P{
+    transform: translateY(-160px);
+    padding: 0 270px;
+
+    animation-name: main_button;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}

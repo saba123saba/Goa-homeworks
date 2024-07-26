@@ -1,0 +1,33 @@
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.draw_square{
+    width: 200px;
+    height: 200px;
+
+    background-color: rgb(48, 105, 154);
+    
+    margin: auto;
+    margin-top: 200px;
+
+    transform: scale(1);
+    transform: rotate(2);
+    transition-duration: 4s;
+    
+    border-radius: 20px;
+}
