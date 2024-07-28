@@ -6,3 +6,5 @@ def double_char(s):
         result += count
         
     return result
+
+print(double_char('bladadadalad adadadaa'))
