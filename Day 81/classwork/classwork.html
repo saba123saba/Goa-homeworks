@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+
+            padding-top: 100px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        #btn {
+            padding: 5px 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn" onclick="promptShow()">CLick me</button> -->
+
+    <!--// 1. შექმენით Form ი სადაც გექნებათ სახელი გვარი და იმეილი. როდესაც დადასტურდება
+    // ფორმა წამოიღეთ მონაცემები და დაამატეთ ობიექტში, ხოლო ახალ შექმნილი ობიექტი დაამატეთ მასივში
+    // ყოველ ახალ დამატებულ ობიექტზე დაბეჭდეთ მასივი.
+    -->
+
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Please enter your name:">
+        <input type="text" name="lastname" placeholder="Please enter your lastname:">
+        <input type="email" name="email" placeholder="Please enter your email:">
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>

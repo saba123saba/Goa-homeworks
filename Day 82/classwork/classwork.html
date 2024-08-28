@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(128, 188, 241);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Main-containerDIV{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 15%;
+
+            position: relative;
+            top: 70px;
+        }
+
+        .Main-DIV {
+            width: 90%;
+            height: 600px;
+
+            border: 2px solid rgb(100, 124, 230);
+            border-radius: 10px;
+
+            background-color: rgb(2, 17, 30);
+        }
+
+        .parent-div {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            
+            grid-gap: 60px;
+            
+            position: relative;
+            top: 12px;
+            left: 50px;
+        }
+
+        .child-div{
+            width: 150px;
+            height: 150px;
+            
+            background-color: rgb(128, 188, 241);
+            transform: scaleX(1);
+
+            border-radius: 20px;
+            border: 2px solid red;
+        }
+
+        .child-div:hover {
+            transform: translateY(-7px);
+            transform: scaleX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="Main-containerDIV">
+        <div class="Main-DIV">
+            <div class="parent-div">
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+                <div class="child-div"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

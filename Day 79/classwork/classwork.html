@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+
+            padding-top: 200px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        #btn {
+            position: relative;
+            top: 30px;
+
+            padding: 2px 40px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="getNumber()">click me</button>
+
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Please enter FUll name: ">
+        <input type="email" name="email" placeholder="Please enter email: ">
+        <input type="password" name="password" placeholder="Please enter password: ">
+        <input type="text" name="text" placeholder="Please enter beloved color: ">
+        <button id="btn" type="button">Submit</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
