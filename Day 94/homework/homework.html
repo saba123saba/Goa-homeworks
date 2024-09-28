@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .slider {
+            position: relative;
+
+            width: 100%;
+            max-width: 1100px;
+
+            margin: auto;
+
+            overflow: hidden;
+
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+
+            box-sizing: border-box;
+
+            height: 550px;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .prev, .next {
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+
+            color: white;
+
+            border: none;
+            cursor: pointer;
+
+            padding: 15px;
+            font-size: 24px;
+
+            border-radius: 50%;
+
+            z-index: 100;
+            
+            transition: background-color 0.3s;
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+        .prev::before {
+            content: '◀';
+        }
+
+        .next::before {
+            content: '▶';
+        }
+
+        @media (max-width: 600px) {
+            .slide {
+                height: 300px;
+            }
+            .prev, .next {
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="DIV-container">
+        <div class="slider-underCONTAINER">
+            <!-- <video class="Main-VideoPARENT" autoplay muted loop>
+                <source src="./videos/Untitled video - Made with Clipchamp (7).mp4" type="video/mp4">
+            </video> -->
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="/imgs/main img/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg" alt="code_img">
+                    <img class="slide" src="/imgs/main img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="code_img">
+                    <img class="slide" src="/imgs/main img/pankaj-patel-Fi-GJaLRGKc-unsplash.jpg" alt="code_img">
+                    <img class="slide" src="/imgs/main img/riku-lu-wvJuYrM5iuw-unsplash.jpg" alt="code_img">
+                    <img class="slide" src="/imgs/main img/charlesdeluvio-pjAH2Ax4uWk-unsplash.jpg" alt="code_img">
+                </div>
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./homework.js"></script>
+</body>
+</html>
