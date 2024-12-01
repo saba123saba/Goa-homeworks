@@ -1,0 +1,11 @@
+{
+  "name": "group-11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "first project with team"
+  },
+  "author": "saba kublashvili",
+  "license": "ISC",
+  "description": ""
+}

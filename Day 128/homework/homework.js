@@ -1,0 +1,1 @@
+// homework ი გავაკეთე replit ში 
