@@ -1,0 +1,2 @@
+// gakvetili daetmo moswavleebis gamokitxvas
+
