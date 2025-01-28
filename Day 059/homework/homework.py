@@ -1,1 +1,1 @@
-#batoni zurabis gakvetili
+#ახსნა c ენა და მისი ძირითადი მახასიათებლები

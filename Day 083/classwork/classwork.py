@@ -1,1 +1,1 @@
-# batoni zurabis gakvetili
+# batoni zurabis gakvetili ( საკლასო არგვქონია )

@@ -1,1 +1,1 @@
-# batoni zurabis gakvetili
+# გაკვეთილი დაეთმო c ენას

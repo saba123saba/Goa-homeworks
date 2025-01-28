@@ -1,1 +1,1 @@
-#batoni zurabis gakvetili
+#batoni zurabis gakvetili  ( გაკვეთილი დაეთმო linux da window ის განხილვას )
